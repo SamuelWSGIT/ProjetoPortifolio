@@ -38,4 +38,7 @@
         margin: 0px;
         margin-top: 40px;
     }
+    footer{
+        display: none;
+    }
 }
