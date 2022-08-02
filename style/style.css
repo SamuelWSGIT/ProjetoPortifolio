@@ -1,102 +1,58 @@
+/* ---------- Geral ---------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 a {
   color: #fff;
+  width: fit-content;
+  height: fit-content;
   text-decoration: none;
   transition: 0.3s;
 }
+
+ul {
+  width: fit-content;
+  height: fit-content;
+}
+li {
+  width: fit-content;
+  height: fit-content;
+}
+p{
+  width: fit-content;
+  height: fit-content;
+}
+
 a:hover {
   opacity: 0.7;
 }
+
 .imgAnimate {
-  width: 500px;
-  height: 500px;
+  min-width: 50vh;
+  min-height: 50vh;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100px 100px 100px 100px;
   border-style: groove;
 }
-.perfilbox2 {
-  display: flex;
-  margin: 0px;
-  width: fit-content;
-  margin-top: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.perfilbox3 {
-  height: fit-content;
-  display: flex;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: center;
-  text-align: left;
-  flex-direction: column;
-  align-items: center;
-}
-.perfilbox3 h3{
-  text-align: center;
-}
-.perfilbox3 p{
-  text-align: left;
-}
-nav {
-  height: fit-content;
-  width: 100%;
-  right: 0;
-  display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  align-items: center;
-  justify-content: space-around;
-}
-nav ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav ul li {
-  position: relative;
-  list-style: none;
-}
-nav ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.6s;
-}
-.banner {
-  width: 1px;
-  height: 100px;
-}
+
+/* ---------- Geral ---------- */
+
 body {
   position: static;
   height: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    #000000 20%,
-    #2d4d45,
-    #42e3bb 100%
-  );
+  background-image: linear-gradient(to bottom,
+      #000000 20%,
+      #2d4d45,
+      #42e3bb 100%);
   background-attachment: fixed;
 }
-.corpo {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  /* align-items: center; */
-  /* align-content: center; */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-header {
+
+body > header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -110,6 +66,66 @@ header {
   height: fit-content;
   background-color: black;
 }
+
+body > header > nav {
+  height: fit-content;
+  width: 100%;
+  right: 0;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body > header > nav > ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > header > nav > ul > li {
+  position: relative;
+  list-style: none;
+}
+
+body > header > nav > ul > li > a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+body > main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.expinfo {
+  padding-bottom: 10px;
+}
+
+.expinfo2 {
+  padding-bottom: 10px;
+}
+
+/* ---------- Desorganizados ---------- */
+
+body > .banner {
+  width: 1px;
+  height: 100px;
+}
+
+#titulocomp{
+  top: 0px;
+}
+
 .logo {
   color: #42e3bb;
   text-shadow: 0px 0px 7px #8ce4ce;
@@ -118,14 +134,33 @@ header {
   letter-spacing: 4px;
   transition: 0.6s;
 }
-#perfil {
-    width: 100vh;
-    height: fit-content;
-    border-radius: 15px 15px 15px 15px;
-    margin: 30px;
-    margin-bottom: 120px;
-  }
-#habilidades {
+
+#link1 {
+  width: 130vh;
+  height: fit-content;
+  border-radius: 15px 15px 15px 15px;
+  margin: 30px;
+  margin-bottom: 120px;
+}
+
+#link2 {
+  width: 130vh;
+  height: fit-content;
+  border-radius: 15px 15px 15px 15px;
+  margin: 30px;
+  margin-bottom: 120px;
+  flex-direction: row-reverse;
+}
+
+#link3 {
+  width: 100vh;
+  height: fit-content;
+  border-radius: 15px 15px 15px 15px;
+  margin: 30px;
+  margin-bottom: 120px;
+}
+
+#link4 {
   width: 100vh;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
@@ -133,113 +168,150 @@ header {
   margin-bottom: 120px;
   flex-direction: row-reverse;
 }
-#servicos {
+
+#link5 {
   width: 100vh;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
   margin: 30px;
   margin-bottom: 120px;
 }
-#conhecimentos {
-  width: 100vh;
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
-  flex-direction: row-reverse;
-}
-#projetos {
-  width: 100vh;
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
-}
+
 #texto-projetos {
-    display: flex;
-    color: white;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding-bottom: 15px;
-    padding-top: 5px;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
+
+#sub-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+}
+
+#sub-titulo2 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 #sub-texto-projetos {
+  height: fit-content;
+  width: fit-content;
+  border-top: 1px solid white;
+  padding-left: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#sub-texto-projetos2 {
   border-top: 1px solid white;
   padding-left: 10px;
   height: fit-content;
   width: fit-content;
   display: flex;
-  font-size: 15px;
+  font-size: 10px;
   align-items: stretch;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
-.projetos-divs{
-  margin: 17px;
+
+.projetos-divs {
+  margin-left: auto;
+  padding-left: 15px;
+  margin-right: auto;
   text-align: left;
 }
-.projetos-divs a{
-    font-size: 20px;
+
+.projetos-divs {
+  margin-bottom: 5px;
 }
+
+.projetos-divs ul li {
+  margin-bottom: 5px;
+}
+
+.projetos-divs a {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
 #texto {
   border: 1px solid white;
   border-radius: 15px;
-  width: 1000px;
   color: white;
   display: flex;
   flex-direction: column;
-
+  
   justify-content: center;
   align-items: center;
-
+  
   text-align: center;
-  margin: 15px;
+  margin: 12px;
+  width: fit-content;
+  height: fit-content;
 }
 
 #texto h1 {
   display: flex;
   align-items: center;
 }
+
 #texto p {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
 }
+
 .foto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .foto img {
   height: 30vh;
   width: 30vh;
   border-radius: 15px 15px 15px 15px;
 }
-footer {
+
+body > footer {
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px 15px 0px 0px;
   display: flex;
   justify-content: center;
 }
-footer .info {
+
+body > footer .info {
   padding: 5px 5px 0px 20px;
   height: 110px;
-  width: fit-content;
-  display: flex;
-  border-right: 1px solid white;
-  flex-direction: column;
-}
-footer .info2 {
-  padding: 5px 5px 0px 20px;
-  height: 110px;
-  width: fit-content;
+  width: 30vh;
   display: flex;
   flex-direction: column;
 }
-footer h4 {
+
+body > footer .info h4 {
+  border-bottom: 1px solid white;
+}
+
+.dividir {
+  background-color: white;
+  height: 120px;
+  width: 1px;
+}
+
+body > footer h4 {
   text-align: center;
   color: #42e3bb;
   text-shadow: 0px 0px 7px #8ce4ce;
@@ -249,19 +321,23 @@ footer h4 {
   transition: 0.6s;
   padding-bottom: 5px;
 }
-footer .info ul {
-  left: 0;
+
+body > footer .info ul {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-footer .info ul li a {
-  display: flex;
-}
-footer img {
+
+body > footer img {
   height: 20px;
   width: 20px;
 }
+
+body > rodape {
+  border: 1px solid white;
+}
+
 /* ---------- animações ---------- */
 [data-anime] {
   opacity: 0;
