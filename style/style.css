@@ -45,6 +45,7 @@ body {
       #2d4d45,
       #42e3bb 100%);
   background-attachment: fixed;
+  margin-top: 95px;
 }
 
 body > header {
@@ -258,7 +259,8 @@ body > footer {
 }
 
 body > footer .info {
-  padding: 5px 5px 0px 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   height: 110px;
   width: 30vh;
   display: flex;
@@ -267,6 +269,7 @@ body > footer .info {
 
 body > footer .info h4 {
   border-bottom: 1px solid white;
+  margin-top: 5px;
 }
 
 .dividir {
