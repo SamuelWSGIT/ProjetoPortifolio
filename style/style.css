@@ -15,19 +15,6 @@ a {
   transition: 0.3s;
 }
 
-ul {
-  width: fit-content;
-  height: fit-content;
-}
-li {
-  width: fit-content;
-  height: fit-content;
-}
-p{
-  width: fit-content;
-  height: fit-content;
-}
-
 a:hover {
   opacity: 0.7;
 }
@@ -38,6 +25,14 @@ a:hover {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100px 100px 100px 100px;
   border-style: groove;
+}
+
+#texto h1 {
+  margin: 5px;
+}
+
+#texto ul {
+  margin: 5px;
 }
 
 /* ---------- Geral ---------- */
@@ -107,23 +102,11 @@ body > main {
   justify-content: center;
 }
 
-.expinfo {
-  padding-bottom: 10px;
-}
-
-.expinfo2 {
-  padding-bottom: 10px;
-}
-
 /* ---------- Desorganizados ---------- */
 
 body > .banner {
   width: 1px;
   height: 100px;
-}
-
-#titulocomp{
-  top: 0px;
 }
 
 .logo {
@@ -200,50 +183,42 @@ body > .banner {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.expinfo {
+  margin: 5px;
+}
+
+.expinfo2 {
+  margin: 5px;
+}
+.projetos-divs{
+  padding: 15px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 #sub-texto-projetos {
   height: fit-content;
   width: fit-content;
   border-top: 1px solid white;
-  padding-left: 10px;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  align-content: space-around;
 }
 
 #sub-texto-projetos2 {
   border-top: 1px solid white;
-  padding-left: 10px;
   height: fit-content;
   width: fit-content;
   display: flex;
-  font-size: 10px;
+  font-size: 13px;
   align-items: stretch;
   justify-content: space-between;
-}
-
-.projetos-divs {
-  margin-left: auto;
-  padding-left: 15px;
-  margin-right: auto;
-  text-align: left;
-}
-
-.projetos-divs {
-  margin-bottom: 5px;
-}
-
-.projetos-divs ul li {
-  margin-bottom: 5px;
-}
-
-.projetos-divs a {
-  margin-bottom: 5px;
-  font-size: 20px;
+  flex-direction: column;
 }
 
 #texto {
@@ -260,17 +235,6 @@ body > .banner {
   margin: 12px;
   width: fit-content;
   height: fit-content;
-}
-
-#texto h1 {
-  display: flex;
-  align-items: center;
-}
-
-#texto p {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
 }
 
 .foto {
