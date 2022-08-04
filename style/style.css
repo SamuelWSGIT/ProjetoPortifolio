@@ -140,7 +140,6 @@ body > header > nav > ul > li > a {
 
 body > main {
   display: flex;
-  height: 100%;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -163,7 +162,7 @@ body > .banner {
 }
 
 #link1 {
-  width: 130vh;
+  width: 100%;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
   margin: 30px;
@@ -171,7 +170,7 @@ body > .banner {
 }
 
 #link2 {
-  width: 130vh;
+  width: 100%;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
   margin: 30px;
@@ -224,7 +223,7 @@ body > .banner {
 }
 
 #sub-titulo2 {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -288,8 +287,8 @@ body > .banner {
 }
 
 .foto img {
-  height: 30vh;
-  width: 30vh;
+  height: 100%;
+  width: 100%;
   border-radius: 15px 15px 15px 15px;
 }
 
