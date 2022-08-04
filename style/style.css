@@ -19,9 +19,52 @@ a:hover {
   opacity: 0.7;
 }
 
+header ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+header ul li {
+  display: inline;
+  position: relative;
+}
+
+header ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Sub menu */
+
+header ul ul{
+  display: none;
+  position: absolute;
+}
+
+header ul li:hover ul{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.linha {
+  margin: 10px 0px 10px 0px;
+  width: auto;
+  height: 1px;
+  background-color: white;
+}
+
+
 .imgAnimate {
-  min-width: 50vh;
-  min-height: 50vh;
+  width: 100%;
+  max-width: 980px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100px 100px 100px 100px;
   border-style: groove;
@@ -57,7 +100,7 @@ body > header {
   align-items: center;
   transition: 0.6s;
   padding: 40px 100px;
-  z-index: 100000;
+  z-index: 10;
   margin: 0px;
   height: fit-content;
   background-color: black;
@@ -68,10 +111,10 @@ body > header > nav {
   width: 100%;
   right: 0;
   display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 body > header > nav > ul {
@@ -110,7 +153,7 @@ body > .banner {
   height: 100px;
 }
 
-.logo {
+.logo a{
   color: #42e3bb;
   text-shadow: 0px 0px 7px #8ce4ce;
   font-size: 24px;
