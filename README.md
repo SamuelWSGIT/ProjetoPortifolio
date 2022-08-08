@@ -22,35 +22,35 @@ Aqui estão as tecnologias que foram usadas no projeto.
 
 ## Visualização
 
-### 1 - Home page (800x472)
+### 1 - Perfil (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/1.png)
 
-### 2 - Home page (800x472)
+### 2 - Experiências (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/2.png)
 
-### 3 - Home page (800x472)
+### 3 - Redes (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/3.png)
 
-### 4 - Home page (800x472)
+### 4 - Conhecimentos (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/4.png)
 
-### 5 - Home page (800x472)
+### 5 - Projetos (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/5.png)
 
-### 6 - Home page (800x472)
+### 6 -Contatos (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/6.png)
 
-### 7 - Home page (800x472)
+### 7 - link dropdown 1 (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/ref1.png)
 
-### 8 - Home page (800x472)
+### 8 - link dropdown 2 (800x472)
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/ref2.png)
 
