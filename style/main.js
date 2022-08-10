@@ -58,7 +58,7 @@ function getScrollTopByHref(element) {
 
 function scrollToIdOnClick(event) {
   event.preventDefault();
-  const to = getScrollTopByHref(event.target) - 160;
+  const to = getScrollTopByHref(event.target) - 80;
   scrollToPosition(to);
 }
 
