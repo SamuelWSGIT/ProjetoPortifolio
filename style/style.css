@@ -44,6 +44,7 @@ header ul ul{
 }
 
 header ul li:hover ul{
+  z-index: 2;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -82,28 +83,25 @@ header ul li:hover ul{
 
 body {
   position: static;
-  height: 100%;
-  background-image: linear-gradient(to bottom,
-      #000000 20%,
-      #2d4d45,
-      #42e3bb 100%);
+  background-image: linear-gradient(to bottom, #000000 20%, #2d4d45, #42e3bb 100%);
   background-attachment: fixed;
+  background-size: cover;
   margin-top: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 body > header {
   position: fixed;
-  top: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
-  padding: 40px 100px;
-  z-index: 10;
-  margin: 0px;
-  height: fit-content;
   background-color: black;
+  top: 0;
+  margin: 0px;
+  z-index: 10;
+  size: 100%;
 }
 
 body > header > nav {
@@ -140,16 +138,18 @@ body > header > nav > ul > li > a {
 
 body > main {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 
 /* ---------- Desorganizados ---------- */
 
 body > .banner {
   width: 1px;
-  height: 100px;
+  height: 7vh;
+  display: none;
 }
 
 .logo a{
@@ -162,45 +162,40 @@ body > .banner {
 }
 
 #link1 {
-  width: 100%;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #link2 {
-  width: 100%;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   flex-direction: row-reverse;
 }
 
 #link3 {
-  width: 100vh;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #link4 {
-  width: 100vh;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   flex-direction: row-reverse;
 }
 
 #link5 {
-  width: 100vh;
   height: fit-content;
   border-radius: 15px 15px 15px 15px;
-  margin: 30px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #texto-projetos {
@@ -246,6 +241,8 @@ body > .banner {
 #sub-texto-projetos {
   height: fit-content;
   width: fit-content;
+  max-width: 50vw;
+  min-width: 10vw;
   border-top: 1px solid white;
   font-size: 13px;
   display: flex;
@@ -277,6 +274,7 @@ body > .banner {
   text-align: center;
   margin: 12px;
   width: fit-content;
+  max-width: 50vw;
   height: fit-content;
 }
 
@@ -293,8 +291,8 @@ body > .banner {
 }
 
 body > footer {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100vw;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -339,6 +337,21 @@ body > footer .info ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+body > footer .info2 ul {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body > footer .info ul li p{
+  color: white;
+}
+
+body > footer .info2 ul li p{
+  color: white;
 }
 
 .dividir {

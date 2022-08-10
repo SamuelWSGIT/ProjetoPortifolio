@@ -17,8 +17,8 @@ const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll() {
-    const windowin = window.pageYOffset + ((window.innerHeight * 2.5) / 4);
-    const windowout = window.pageYOffset + ((window.innerHeight * 2.5) / 4);
+    const windowin = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    const windowout = window.pageYOffset + ((window.innerHeight * 3) / 4);
     target.forEach(function(element) {
         if((windowin) > element.offsetTop) {
             element.classList.add(animationClass);
@@ -58,7 +58,7 @@ function getScrollTopByHref(element) {
 
 function scrollToIdOnClick(event) {
   event.preventDefault();
-  const to = getScrollTopByHref(event.target) - 208;
+  const to = getScrollTopByHref(event.target) - 160;
   scrollToPosition(to);
 }
 
