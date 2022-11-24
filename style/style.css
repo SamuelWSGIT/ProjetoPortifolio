@@ -1,383 +1,155 @@
-/* ---------- Geral ---------- */
+/* ---------- Geral [*] ---------- */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
   font-family: 'Courier New', Courier, monospace;
 }
 
-a {
-  color: #fff;
-  width: fit-content;
-  height: fit-content;
-  text-decoration: none;
+a{
+  color: aqua;
   transition: 0.3s;
 }
 
-a:hover {
-  opacity: 0.7;
+p{
+  font-size: 1em;
 }
 
-header ul {
-  list-style-type: none;
-  padding: 0;
-  color: white;
-}
+/* ---------- header [ nav > ul > li > a ] ---------- */
 
-header ul li {
-  display: inline;
-  position: relative;
-}
-
-header ul li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-}
-
-/* Sub menu */
-
-header ul ul{
-  display: none;
-  position: absolute;
-}
-
-header ul li:hover ul{
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  border: 1px solid white;
-  padding: 10px;
-  font-size: 12px;
-}
-
-.linha {
-  margin: 10px 0px 10px 0px;
-  width: auto;
-  height: 1px;
-  background-color: white;
-}
-
-
-.imgAnimate {
+header{
   width: 100%;
-  max-width: 980px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100px 100px 100px 100px;
-  border-style: groove;
+  height: 15%;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  background-image: linear-gradient(to bottom, #000 50%, rgba(0, 0, 0, 0) 100%)
 }
 
-#texto h1 {
-  margin: 5px;
+header nav{
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#texto ul {
-  margin: 5px;
+header nav ul{
+  border: 1px solid white;
+  background: #000;
+  display: flex;
 }
 
-/* ---------- Geral ---------- */
+header nav ul li {
+  padding: 5px 10px;
+}
+
+header nav ul li:hover{
+  background: white;
+}
+
+header nav ul li:hover a{
+  color: #000;
+}
+
+header nav ul li:nth-child( n + 2 ) {
+  border-left: 1px solid white;
+}
+
+header nav ul li a{
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* ---------- Body [ main > section ] ---------- */
 
 body {
   position: static;
   background-image: linear-gradient(to bottom, #000000 20%, #2d4d45, #42e3bb 100%);
   background-attachment: fixed;
-  background-size: cover;
-  margin-top: 95px;
+}
+
+section {
+  margin-top: 9em;
+  margin-bottom: 5em;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-body > header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  top: 0;
-  margin: 0px;
-  z-index: 10;
-  size: 100%;
+/* ---------- Section [ #texto aside > .imgAnimate ] ---------- */
+
+aside{
+  width: 30%;
+  float: left;
 }
 
-body > header > nav {
-  height: fit-content;
-  width: 100%;
+.imgAnimate{
+  width: 20em;
   right: 0;
-  display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
-body > header > nav > ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#texto{
+  float: right;
+  width: 50%;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.250);
 }
 
-body > header > nav > ul > li {
-  position: relative;
-  list-style: none;
-}
+/* ---------- Formatação de texto ---------- */
 
-body > header > nav > ul > li > a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.6s;
-}
-
-body > main {
-  display: flex;
-  width: 100vw;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* ---------- Desorganizados ---------- */
-
-body > .banner {
-  width: 1px;
-  height: 7vh;
-  display: none;
-}
-
-.logo a{
-  color: #42e3bb;
-  text-shadow: 0px 0px 7px #8ce4ce;
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  transition: 0.6s;
-}
-
-#link1 {
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-#link2 {
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  flex-direction: row-reverse;
-}
-
-#link3 {
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-#link4 {
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  flex-direction: row-reverse;
-}
-
-#link5 {
-  height: fit-content;
-  border-radius: 15px 15px 15px 15px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-#texto-projetos {
-  display: flex;
-  color: white;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding-bottom: 15px;
-  padding-top: 5px;
-}
-
-#sub-titulo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 5px;
-}
-
-#sub-titulo2 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.expinfo {
-  margin: 5px;
-}
-
-.expinfo2 {
-  margin: 5px;
-}
-.projetos-divs{
-  padding: 15px;
-  margin-left: 10px;
-  text-align: left;
-}
-
-#sub-texto-projetos {
-  height: fit-content;
-  width: fit-content;
-  max-width: 50vw;
-  min-width: 10vw;
-  border-top: 1px solid white;
-  font-size: 13px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-}
-
-#sub-texto-projetos2 {
-  border-top: 1px solid white;
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  font-size: 13px;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-#texto {
-  border: 1px solid white;
-  border-radius: 15px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  
-  justify-content: center;
-  align-items: center;
-  
-  text-align: center;
-  margin: 12px;
-  width: fit-content;
-  max-width: 50vw;
-  height: fit-content;
-}
-
-.foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.foto img {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px 15px 15px 15px;
-}
-
-body > footer {
-  height: 100%;
-  width: 100vw;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  bottom: 0px;
-  justify-content: center;
-}
-
-body > footer .info {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-
-  height: auto;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid white;
-}
-body > footer .info2 {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-
-  height: auto;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-
-body > footer .info2 h4 {
-  border-bottom: 1px solid white;
-  margin-top: 5px;
-}
-
-body > footer .info h4 {
-  border-bottom: 1px solid white;
-  margin-top: 5px;
-}
-
-body > footer .info ul {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-body > footer .info2 ul {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-body > footer .info ul li p{
+#texto h1{
+  font-size: 3em;
   color: white;
 }
 
-body > footer .info2 ul li p{
+#texto h2 {
+  font-size: 2em;
+  color: greenyellow;
+}
+
+#texto h3 {
   color: white;
 }
 
-.dividir {
-  background-color: white;
-  height: 140px;
-  width: 1px;
+#texto h4{
+  font-size: 2.5em;
+  color: greenyellow;
 }
 
-body > footer h4 {
-  text-align: center;
-  color: #42e3bb;
-  text-shadow: 0px 0px 7px #8ce4ce;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  transition: 0.6s;
-  padding-bottom: 5px;
+/* ---------- Rodape [ footer .info > h4 ul > li > a ] ---------- */
+
+footer {
+  bottom: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.397);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin: 1px;
+  padding: 5px 10px;
+  justify-content: center;
+  color: white;
 }
 
-body > footer img {
-  height: 20px;
-  width: 20px;
+footer .info{
+  padding: 0px 30px;
 }
 
-body > rodape {
-  border: 1px solid white;
+footer .info:nth-child(-n+3){
+  border-right: 1px solid black;
+}
+
+footer .info2 {
+  display: flex;
+  padding: 0px 30px;
+  border-right: 1px solid black;
+  align-items: center;
+}
+
+footer h3{
+  bottom: 0;
 }
 
 /* ---------- animações ---------- */
@@ -397,12 +169,4 @@ body > rodape {
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
-}
-
-/* ---------- display ----------*/
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
