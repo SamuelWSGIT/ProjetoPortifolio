@@ -93,6 +93,7 @@ aside{
 #texto{
   float: right;
   width: 50%;
+  min-width: 440px;
   padding: 50px;
   border: 1px solid black;
   border-radius: 50px;
