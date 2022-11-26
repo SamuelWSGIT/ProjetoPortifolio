@@ -123,7 +123,7 @@ aside{
   margin-right: 10px;
 }
 
-.projetos_tab a:hover {
+.projetos_tab a:hover{
   background: white;
   border: 1px solid black;
   color: black;
@@ -146,7 +146,7 @@ aside{
 
 #texto h2 {
   font-size: 2em;
-  color: greenyellow;
+  color: rgb(0, 148, 79);
 }
 
 #texto h3 {
