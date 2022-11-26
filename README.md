@@ -46,14 +46,6 @@ Aqui estão as tecnologias que foram usadas no projeto.
 
 ![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/6.png)
 
-### 7 - link dropdown 1 (800x472)
-
-![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/ref1.png)
-
-### 8 - link dropdown 2 (800x472)
-
-![Homepage image](https://github.com/SamuelWSGIT/ProjetoPortifolio/blob/main/img/ref2.png)
-
 ## Características
 A principal funcionadade desse repositorio :
  - Publicar minhas criações.
