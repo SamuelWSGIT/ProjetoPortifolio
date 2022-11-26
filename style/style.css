@@ -13,6 +13,10 @@ a{
   transition: 0.3s;
 }
 
+a:hover{
+  color: rgb(202, 211, 255);
+}
+
 p{
   font-size: 1em;
 }
@@ -78,7 +82,7 @@ section {
   justify-content: center;
 }
 
-/* ---------- Section [ #texto aside > .imgAnimate ] ---------- */
+/* ---------- Section [ #texto aside > .imgAnimate .project_img ] ---------- */
 
 aside{
   width: 30%;
@@ -92,12 +96,49 @@ aside{
 
 #texto{
   float: right;
-  width: 50%;
+  max-width: 50%;
   min-width: 440px;
   padding: 50px;
   border: 1px solid black;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.250);
+}
+
+.projetos_tab a{
+  display: flex;
+  border: 1px solid white;
+  border-radius: 17px;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: white;
+}
+.redes_name{
+  display: flex;
+  align-items: center;
+}
+.redes_name img{
+  margin-right: 10px;
+}
+
+.projetos_tab a:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.texto_projeto{
+  margin: 5px;
+}
+
+.img_projeto{
+
+}
+
+.project_img{
+  width: 5em;
 }
 
 /* ---------- Formatação de texto ---------- */
